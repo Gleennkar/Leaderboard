@@ -1,12 +1,12 @@
 {
   "name": "leaderboard",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a Microverse project that entails a Leader Board setup.",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
-   "start": "webpack serve --open",
+    "start": "webpack serve --open",
     "build": "webpack"
   },
   "repository": {
@@ -39,8 +39,6 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "webpack.config.js"
 }
-
-
-
