@@ -1,5 +1,5 @@
 import './style.css';
-import STORE from './modules/store.js';
+import STORE from './Modules/store.js';
 
 const { v4: uuidv4 } = require('uuid');
 
@@ -24,7 +24,7 @@ const pieces = [
 ];
 
 const init = () => {
-  pieces.forEach((piece) => STORE.getScoreList(piece));
+  pieces.forEach((piece) => STORE.getScores(piece));
 };
 
 init();

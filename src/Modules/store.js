@@ -1,5 +1,5 @@
 export default class STORE {
-    static getScoreList = (piece) => {
+    static getScores = (piece) => {
       const scoresList = document.querySelector('.scores');
 
       const listedPiece = document.createElement('li');
