@@ -1,13 +1,4 @@
-// const { v4: uuidv4 } = require('uuid');
 
-// export default class PIECE {
-//   constructor(name, score) {
-//     this.name = name;
-//     this.score = score;
-//     this.id = uuidv4();
-//   }
-// }
-// 'Game with ID: GrlP35gyONINxwNnhDtc added.'}
 
 async function userScores(a, b) {
   const BaseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GrlP35gyONINxwNnhDtc/scores';
