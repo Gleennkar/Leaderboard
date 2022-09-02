@@ -1,5 +1,3 @@
-
-
 async function userScores(a, b) {
   const BaseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GrlP35gyONINxwNnhDtc/scores';
   fetch(BaseUrl, {
