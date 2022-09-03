@@ -1,5 +1,10 @@
 # Leaderboard
 This is a Microverse project that entails a Leader Board setup.
+Implement the "Refresh" button that will get all scores for a game created by you from the API (receiving data from the API and parsing the JSON
+Make sure that you saved the ID of your game that will be returned by API.
+Implement the form "Submit" button that will save a score for a game created by you (sending data to the API).
+Use arrow functions instead of the function keyword.
+Use async and await JavaScript features to consume the API.
 
 
 ## Built With
@@ -8,7 +13,7 @@ This is a Microverse project that entails a Leader Board setup.
 - CSS
 - Javascript
 - Webpack
-- Gitfow
+- Gitflow
 
 ## Live Demo (if available)
 
