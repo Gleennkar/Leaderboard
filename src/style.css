@@ -20,8 +20,6 @@ h1 {
   line-height: 0.9;
   font-size: 55px;
   font-weight: bold;
-
-  /* padding: 2rem; */
 }
 
 .subtitle1 {
@@ -121,8 +119,6 @@ body {
 .main-container {
   margin: 0 auto;
   max-width: 700px;
-
-  /* border: 1px grey solid; */
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
