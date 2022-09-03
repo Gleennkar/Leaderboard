@@ -1,21 +1,12 @@
-export default class STORE {
-    static getScores = (piece) => {
-      const scoresList = document.querySelector('.scores');
+const games = async () => {
+  const BaseUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/GrlP35gyONINxwNnhDtc/scores';
+  const list = await fetch(BaseUrl);
+  const scorelist = await list.json();
+  const scores = document.querySelector('.scores');
+  scores.innerHTML = '';
+  for (let i = 0; i < scorelist.result.length; i += 1) {
+    scores.innerHTML += `<li class="scoreboard"> ${scorelist.result[i].user} : ${scorelist.result[i].score} </li>`;
+  }
+};
 
-      const listedPiece = document.createElement('li');
-      listedPiece.classList.add('listed-piece');
-      listedPiece.dataset.id = piece.id;
-
-      const pieceName = document.createElement('p');
-      pieceName.classList.add('piece-name');
-      pieceName.textContent = `${piece.name}:`;
-
-      const pieceScore = document.createElement('p');
-      pieceScore.classList.add('piece-score');
-      pieceScore.textContent = piece.score;
-
-      scoresList.appendChild(listedPiece);
-      listedPiece.appendChild(pieceName);
-      listedPiece.appendChild(pieceScore);
-    }
-}
+export default games;

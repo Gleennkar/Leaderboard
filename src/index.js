@@ -1,30 +1,21 @@
 import './style.css';
-import STORE from './Modules/store.js';
+import gamelist from './Modules/score.js';
+import games from './Modules/store.js';
 
-const { v4: uuidv4 } = require('uuid');
+const btn = document.querySelector('.btn');
+const name = document.querySelector('#name');
+const score = document.querySelector('#score');
+const submit = document.querySelector('#submit');
 
-const pieces = [
-  {
-    name: 'Joy',
-    score: '200',
-    id: uuidv4(),
-  },
+function list(i) {
+  i.preventDefault();
+  const play = name.value;
+  const playScore = score.value;
 
-  {
-    name: 'Mir',
-    score: '120',
-    id: uuidv4(),
-  },
+  gamelist(play, playScore);
+  name.value = '';
+  score.value = '';
+}
 
-  {
-    name: 'Gleen',
-    score: '530',
-    id: uuidv4(),
-  },
-];
-
-const init = () => {
-  pieces.forEach((piece) => STORE.getScores(piece));
-};
-
-init();
+submit.addEventListener('click', list);
+btn.addEventListener('click', games);
